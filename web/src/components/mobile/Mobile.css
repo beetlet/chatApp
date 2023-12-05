@@ -1,0 +1,107 @@
+ 
+.mobile-container {
+  width: 375px;
+  height: 667px;
+  margin: auto;
+  border: 3px solid #333;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; 
+  margin-top: 100px;
+  position: relative;
+}
+
+.app-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #e2e2ef;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: center;
+  border-radius: 14px;
+}
+
+
+.app-icon {
+  position: relative;  
+}
+
+.app-icon {
+  padding: 8px 15px;  
+  margin: 0 5px;  
+  background-color: #f0f0f0;  
+  border: 1px solid #ccc;  
+  border-radius: 15px;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;  
+  user-select: none;  
+  display: inline-flex;  
+  align-items: center;  
+  justify-content: center;  
+  font-size: 0.9rem;  
+  transition: background-color 0.3s;  
+}
+
+.app-icon.orange {
+  color: #ff571d;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 22px;
+}
+
+.app-icon.app {
+  color: hsl(106, 42%, 54%);
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 22px;
+}
+
+.app-icon:hover {
+  background-color: #e0e0e0; 
+}
+
+.app-icon.orange:hover::after {
+  content: attr(data-tooltip); 
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;  
+  transform: translateX(-50%); 
+  white-space: nowrap;  
+  padding: 5px 8px;  
+  background-color: #333;  
+  color: white; 
+  font-size: 0.8rem; 
+  border-radius: 4px;  
+  z-index: 1000;  
+  opacity: 0;  
+  transition: opacity 0.3s;  
+  pointer-events: none;  
+}
+
+.app-icon.orange:hover::after {
+  opacity: 1;  
+}
+
+.mobile-screen {
+  flex-grow: 1;  
+  overflow-y: auto;  
+}
+
+.flyout-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 50%;
+  max-height: 80%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1000;
+}
