@@ -3,6 +3,8 @@
 This is a contrived chat demo application with the sole purpose of demonstrating and illustrating the usage of various backend and frontend technologies
 for both web and mobile.  
 
+![Welcome page](./docs/screen_demo_mr_ff.png)
+
 # Go
 
 Go for the backend. Go (or Golang) has several intrinsic features that distinguish it from other programming languages. 
