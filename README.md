@@ -3,9 +3,7 @@
 This is a contrived chat demo application with the sole purpose of demonstrating and illustrating the usage of various backend and frontend technologies
 for both web and mobile.  
 
-![Welcome page](./docs/screen_wp_ff.png)
-
-![Welcome page](./docs/screen_demo_sm_ff.png)
+![Welcome page](./docs/screen_demo_mr_ff.png)
 
 # Go
 
@@ -368,7 +366,3 @@ You should see the following message printed to the screen:
 
 This should run the GO application and open the React web client in the browser.
 
-
---
-
-![Welcome page](./docs/screen_demo_mr_ff.png)
